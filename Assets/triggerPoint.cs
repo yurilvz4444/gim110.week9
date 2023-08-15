@@ -18,7 +18,15 @@ public class triggerPoint : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        print("bruh");
+        if(collision.gameObject.tag == "player")
+        {
+            gameObject.SetActive(false);
+
+
+        }
 
     }
+
+
+
 }
